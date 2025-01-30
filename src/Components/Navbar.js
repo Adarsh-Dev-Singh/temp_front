@@ -37,13 +37,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-gray-900 text-white relative">
+    <nav className="bg-purple-900 text-white relative">
     <div className="flex items-center justify-between lg:mx-10 p-4">
       <div className="flex items-center gap-5">
         <Link to="/" className="flex items-center gap-5">
           <img src='/icon.png ' className="h-10 w-10 md:h-16 md:w-16" alt="Craftopia Logo" />
           <span className="self-center italic lg:text-3xl font-bold p-1 font-[Lemon]">
-            Craftopia
+          TrustLens(Fake Review Detector)
           </span>
         </Link>
       </div>
@@ -63,26 +63,18 @@ const Navbar = () => {
          </li>
          <li>
            <Link
-             to="/arts"
+             to="/graph"
              className="block px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 font-[Salsa]"
            >
-             Art
+             Statistics
            </Link>
          </li>
          <li>
            <Link
-             to="/musics"
+             to="/model_check"
              className="block px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 font-[Salsa]"
            >
-             Music
-           </Link>
-         </li>
-         <li>
-           <Link
-             to="/potteries"
-             className="block px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 font-[Salsa]"
-           >
-             Pottery
+             Model Accuracy check
            </Link>
          </li>
        </ul>
@@ -100,32 +92,25 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="/arts"
+            to="/graph"
             className="block px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 font-[Salsa]"
           >
-            Art
+            Statistics
           </Link>
         </li>
         <li>
           <Link
-            to="/musics"
+            to="/model_check"
             className="block px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 font-[Salsa]"
           >
-            Music
+            Model Accuracy check
           </Link>
         </li>
-        <li>
-          <Link
-            to="/potteries"
-            className="block px-3 text-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 font-[Salsa]"
-          >
-            Pottery
-          </Link>
-        </li>
+       
       </ul>
 
       {/* Search */}
-      <div className="hidden md:flex items-center gap-2">
+      {/* <div className="hidden md:flex items-center gap-2">
         <IoSearch className="w-4 h-4 lg:w-8 lg:h-8" />
         <input
           type="text"
@@ -133,13 +118,13 @@ const Navbar = () => {
           className="block p-2 text-sm md:w-[100px] lg:w-[180px] rounded-lg bg-gray-100 text-gray-900"
           placeholder="Search...."
         />
-      </div>
+      </div> */}
 
       {/* Cart and Authentication */}
       <div className="ml-3 flex items-center lg:gap-8">
-        <Link to="/cart">
+        {/* <Link to="/cart">
           <FaCartArrowDown className="w-5 h-5 lg:h-9 lg:w-8" />
-        </Link>
+        </Link> */}
         {isLoggedIn ? (
           <>
             <span className='text-lr  px-2'>{userName}</span>

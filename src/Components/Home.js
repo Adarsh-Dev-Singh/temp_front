@@ -4,7 +4,8 @@ import Info from './Info'
 import Support from './Support'
 import Explore from './Explore'
 import ExplorePhone from './ExplorePhone';
-
+import Para from './para';
+import TrendLineGraph from './TrendLineGraph';
 const Home = () => {
   const [isDestop, setIsDestop] = useState(false);
 
@@ -31,10 +32,11 @@ const Home = () => {
 const DesktopComponent = () => {
   return (
     <>
-    <Gallery sli_de={3} />
+    {/* <Gallery sli_de={3} /> */}
+    {/* <Para/>
     <Explore/>
     <Info/>
-    <Support/>
+    <Support/> */}
     </>
   );
 };
@@ -42,6 +44,8 @@ const DesktopComponent = () => {
 const MobileComponent = () => {
   return (
    <>
+    <Para/>
+    <TrendLineGraph/>
    <Gallery sli_de={1} />
    <ExplorePhone/>
 

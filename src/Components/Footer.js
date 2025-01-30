@@ -15,15 +15,13 @@ const Footer = () => {
       <div className="grid lg:grid-cols-4 gap-[0px]">
         <div className="lg:col-span-2">
           <a href="/" className="flex items-center gap-5">
-            <img src='/icon.png' className="h-16 w-16" alt="Craftopia Logo" />
+            <img src='/icon.png' className="h-16 w-16" alt="TrustLens Logo" />
             <span className="self-center text-red-200 text-2xl md:text-4xl font-bold mb-2 font-[Lemon] border-b-4 border-red-600 p-1">
-              Craftopia
+              TrustLens
             </span>
           </a>
           <p className="py-4 sm:text-xl text-justify text-white w-[80%]">
-            Join us on the path to appretiate the local art and craft, where
-            each piece of work is a step toward unlocking full potential in the
-            ever-evolving world of Local Talent
+          Join us on the path to fostering transparency and building genuine trust in the digital marketplace—because every decision deserves to be based on the truth.
           </p>
           <div className="flex justify-evenly w-[90%] sm:w-[40%] lg:w-[70%] my-6">
             <a href="https://www.facebook.com/">
@@ -90,7 +88,7 @@ const Footer = () => {
       <div className="text-center relative top-[35px]">
         <div className="text-white text-center">
           <FaRegCopyright className="inline w-[20px] h-[20px] mx-2" />
-          Copyright Craftopia 2024. All Rights Reserved.
+          Copyright TrustLens 2024. All Rights Reserved.
         </div>
       </div>
     </div>

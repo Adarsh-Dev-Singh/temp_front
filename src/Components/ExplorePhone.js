@@ -26,7 +26,7 @@ const ExplorePhone = () => {
               "Embrace the essence of nature with our finely crafted,
               eco-friendly creations.
             </p>
-            <Link to='/arts'  className="rounded bg-white w-[80%] p-2 font-mono">
+            <Link to='/statistics'  className="rounded bg-white w-[80%] p-2 font-mono">
               Explore Art Now !
             </Link>
           </div>
@@ -77,7 +77,7 @@ const ExplorePhone = () => {
             Every sheet of paper becomes a canvas for the soulful expressions
               of Indian craftsmanship.
             </p>
-            <Link to='/arts'  className="rounded bg-white w-[80%] p-2 font-mono">
+            <Link to='/statistics'  className="rounded bg-white w-[80%] p-2 font-mono">
               Explore Art Now !
             </Link>
           </div>

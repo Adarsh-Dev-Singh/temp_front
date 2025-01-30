@@ -13,6 +13,12 @@ import Footer from './Components/Footer';
 import Home from './Components/Home';
 import Auth from './Components/Auth';
 import Cart from './Components/Cart';
+import Para from './Components/para';
+import Graph from './Components/Graph';
+import AllProducts from './Components/AllProducts';
+import ProductDetails from './Components/ProductDetails';
+import Selfcheck from './Components/Selfcheck';
+import TrendLineGraph from './Components/TrendLineGraph';
 const App = () => {
   const [arts, setArts] = useState([]);
   const [musics, setMusics] = useState([]);
@@ -58,18 +64,34 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route />
-        <Route path="/" element={<Home />} />
-        <Route path="/arts" element={<div style={{ margin: '25px', padding: '25px' }} className='flex flex-wrap md:items-center'>
-          {arts.map((art) => (
-            <div className="w-full md:w-1/3" key={art.id}>
-              <ArtCards art={art} />
-            </div>
-          ))}
-        </div>} />
+        <Route path="/statistics" element={<Home />} />
+        <Route 
+  path="/" 
+  element={
+    <div style={{ margin: '25px', padding: '25px' }} className='flex flex-wrap md:items-center'>
+       <Para/>
+        
+      <div className="w-[500px] h-10 items-center gap-4 flex">
+        
+        <div className="text-blue-500 text-[24px] font-bold font-mono">
+        Uncover the Truth Behind Reviews!
+        </div>
+      </div>
+      <div className="text-black text-6xl font-bold font-[Quicksand] mt-4">
+      Select a product Category now to verify reviews!
+      </div>
+       <AllProducts/>
+     
+    </div>
+  } 
+/>
+<Route path="/category/:category" element={<ProductDetails />} />
         <Route
-          path="/arts/:artId"
+          path="/statistics/:artId"
           element={<ArtFullDetails arts={arts} />}
         />
+        <Route path="/graph" element={<Graph />} />
+        <Route path="/model_check" element={<Selfcheck />} />
         <Route />
         <Route />
         <Route path="/potteries" element={<div style={{ margin: '15px', padding: '15px' }} className='flex flex-wrap -mx-4'>
